@@ -4,7 +4,7 @@ body{
 }
 .background-container{
    background-color: white;
-   width: 600px;
+   width: 800px;
    margin: auto;
 }
 header{
@@ -43,30 +43,26 @@ main{
    width: 140px;
    height: auto;
 }
-.sneakers-example{
-   width: 300px;
-   height: auto;
-   transform: scale(-1,1);
-}
-.describe-div{
+.about-us-div{
    display: flex;
+   justify-content: space-between;
    align-items: center;
-   justify-content: space-evenly;
-   padding: 40px;
+   gap: 10px;
 }
-#main-title{
-   font-size: 40px;
-}
-.text-block{
-   max-width: 50%;
-}
-#describing-text{
+p{
+   width: 500px;
+   margin-top: 10px;
    font-size: 18px;
-   color: #555;
-   margin: 15px 0;
+   margin-bottom: 10px;
+   line-height: 25px;
 }
-#shop-now-button{
-   width: 100px;
+h1{
+   font-size: 25px;
+   margin: 0;
+}
+#list-button{
+   margin-top: 20px;
+   width: 130px;
    height: 30px;
    color: white;
    font-weight: bold;
@@ -76,37 +72,35 @@ main{
    border-radius: 10px;
    transition: box-shadow 0.3 ease,transform 0.3 ease;
 }
-#shop-now-button:hover{
+#list-button:hover{
    box-shadow: 0 10px 10px rgba(255, 77,0,0.8);
    transform: scale(1.05);
 }
-.container{
-   display: flex;
-   justify-content: center;
-   gap: 40px;
-   margin-bottom: 10px;
-}
-.main-goods{
-   width: 120px;
+.page-image{
+   width: 250px;
    height: auto;
-   background-color: rgb(197, 197, 197);
-   cursor: pointer;
-   border: none;
-   transition: box-shadow 0.3s,transform 0.3s;
+   margin-right: 10px;
 }
-.main-goods:hover{
-   box-shadow: 5px 5px 5px rgba(197, 197,197, 0.8);
-   transform: scale(1.02);
+
+.text-block{
+   max-width: 300px;
+   margin: 10px;
 }
-.products{
-   background-color: #fff;
-   font-size: 11px;
-   font-weight:100;
-   border: 1px #ddd solid;
-   border-radius: 10px;
-   padding: 15px;
-   text-align: center;
+#describe-list{
+   list-style: none;
+   margin-left: 0;
+   padding-left: 0;  
 }
-#sneakers-title{
-   margin-left: 40px;
+#describe-list li{
+   position: relative;
+   padding-left: 25px;
+   margin-bottom: 10px;
+   font-size: 15px;
+}
+#describe-list li::before{
+   content: "✔";
+   color: rgb(255, 77,0);
+   font-weight: bold;
+   left: 0;
+   position: absolute;
 }
