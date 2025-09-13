@@ -4,7 +4,7 @@ body{
 }
 .background-container{
    background-color: white;
-   width: 800px;
+   width: 600px;
    margin: auto;
 }
 header{
@@ -15,6 +15,7 @@ header{
    justify-content: space-between;
    align-items: center;
 }
+
 main{
    border: black 1px solid;
    height: auto;
@@ -59,58 +60,61 @@ main{
    width: 140px;
    height: auto;
 }
-.about-us-div{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 10px;
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 20px;
+   padding: 20px;
+   margin-top: 20px;
 }
-p{
-   width: 500px;
-   margin-top: 10px;
-   font-size: 18px;
-   margin-bottom: 10px;
-   line-height: 25px;
-}
-h1{
-   font-size: 25px;
-   margin: 0;
-}
-
-.page-image{
-   width: 250px;
+.main-goods{
+   width: 120px;
    height: auto;
-   margin-right: 10px;
+   background-color: rgb(197, 197, 197);
+   cursor: pointer;
+   border: none;
+   transition: box-shadow 0.3s,transform 0.3s;
 }
-
-.text-block{
-   max-width: 300px;
-   margin: 10px;
+.main-goods:hover{
+   box-shadow: 5px 5px 5px rgba(197, 197,197, 0.8);
+   transform: scale(1.02);
 }
-#describe-list{
-   list-style: none;
-   margin-left: 0;
-   padding-left: 0;  
+.products{
+   background-color: #fff;
+   font-size: 11px;
+   font-weight:100;
+   border: 1px #ddd solid;
+   border-radius: 10px;
+   padding: 15px;
+   text-align: center;
 }
-#describe-list li{
-   position: relative;
-   padding-left: 25px;
-   margin-bottom: 10px;
-   font-size: 15px;
+.text-div{
+   padding: 20px;
+   padding-bottom: 0;
+   margin: auto;
+   text-align: center;
 }
-#describe-list li::before{
-   content: "✔";
-   color: rgb(255, 77,0);
+.buttons-on-pages{
+   width: 100px;
+   height: 30px;
+   color: white;
    font-weight: bold;
-   left: 0;
-   position: absolute;
+   background-color: rgb(255, 77, 0);
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: box-shadow 0.3 ease,transform 0.3 ease;
 }
-#about-link{
+.buttons-on-pages:hover{
+   box-shadow: 0px 10px 10px rgba(255, 77,0,0.8);
+   transform: scale(1.05);
+}
+#shop-link{
    color: #838383;
    cursor:default;
    transition: 0;
 }
-#about-link:hover{
+#shop-link:hover{
    box-shadow: 0;
    transform: scale(1);
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shop</title>
+   <link rel="stylesheet" href="shop.css">
+   <link rel="shortcut icon" href="img/Raketa-icon.png" type="image/x-icon">
+</head>
+
+<body>
+   <div class="background-container">
+      <header>
+         <div class="logo-div">
+            <img src="img/shop-logo.png" alt="" class="shop-logo" onclick="window.location.href='index.html'">
+         </div>
+         <div class="links-div">
+            <a href="index.html" class="page-links">Home</a>
+            <a href="about.html" class="page-links">About</a>
+            <a href="" class="page-links"id="shop-link">Shop</a>
+            <a href="contacts.html" class="page-links">Contact</a>
+         </div>
+      </header>
+      <main>
+         <div class="shop-div">
+            <div class="text-div">
+               <h1>Shop Our Collection</h1>
+               <p>Explore our wide selection of sneakers and find the perfect pair for your style.</p>
+               <button class="buttons-on-pages" onclick="document.getElementById('last-product').scrollIntoView({behavior:'smooth'})">Browse</button>
+            </div>
+            <div class="container">
+               <div class="products">
+                  <img src="img/running-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Running sneakers</h2>
+                  <h3 class="goods-price">120$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/casual-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Casual sneakers</h2>
+                  <h3 class="goods-price">100$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/sports-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Sports sneakers</h2>
+                  <h3 class="goods-price">130$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/running-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Running sneakers</h2>
+                  <h3 class="goods-price">120$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/casual-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Casual sneakers</h2>
+                  <h3 class="goods-price">100$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/sports-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Sports sneakers</h2>
+                  <h3 class="goods-price">130$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/running-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Running sneakers</h2>
+                  <h3 class="goods-price">120$</h3>
+               </div>
+               <div class="products">
+                  <img src="img/casual-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Casual sneakers</h2>
+                  <h3 class="goods-price">100$</h3>
+               </div>
+               <div class="products" id="last-product">
+                  <img src="img/sports-sneakers.png" alt="" class="main-goods">
+                  <h2 class="goods-title">Sports sneakers</h2>
+                  <h3 class="goods-price">130$</h3>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+
+
+
+   <script src="shop.js"></script>
+</body>
+
+</html>

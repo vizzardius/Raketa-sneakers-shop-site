@@ -4,7 +4,7 @@ body{
 }
 .background-container{
    background-color: white;
-   width: 800px;
+   width: 600px;
    margin: auto;
 }
 header{
@@ -19,6 +19,10 @@ main{
    border: black 1px solid;
    height: auto;
    width: 100%;
+}
+p{
+   width: 350px;
+   margin-left: 140px;
 }
 #list-button{
    margin-top: 20px;
@@ -59,58 +63,49 @@ main{
    width: 140px;
    height: auto;
 }
-.about-us-div{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 10px;
+.text-div{
+   text-align: center;
 }
-p{
-   width: 500px;
+.text-div input{
+   display: grid;
+   grid-template-columns: repeat(1fr);
+   margin: auto;
+   width: 350px;
    margin-top: 10px;
-   font-size: 18px;
-   margin-bottom: 10px;
-   line-height: 25px;
+   height: 30px;
 }
-h1{
-   font-size: 25px;
-   margin: 0;
+#Message-input{
+   height: 60px;
+   padding-bottom: 50px;
 }
-
-.page-image{
-   width: 250px;
-   height: auto;
-   margin-right: 10px;
-}
-
-.text-block{
-   max-width: 300px;
-   margin: 10px;
-}
-#describe-list{
-   list-style: none;
-   margin-left: 0;
-   padding-left: 0;  
-}
-#describe-list li{
-   position: relative;
-   padding-left: 25px;
-   margin-bottom: 10px;
-   font-size: 15px;
-}
-#describe-list li::before{
-   content: "✔";
-   color: rgb(255, 77,0);
+.buttons-on-pages{
+   width: 100px;
+   height: 30px;
+   color: white;
    font-weight: bold;
-   left: 0;
-   position: absolute;
+   background-color: rgb(255, 77, 0);
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: box-shadow 0.3 ease,transform 0.3 ease;
+   margin: 20px;
 }
-#about-link{
+.buttons-on-pages:hover{
+   box-shadow: 0px 10px 10px rgba(255, 77,0,0.8);
+   transform: scale(1.05);
+}
+h4{
+   margin-right: 300px;
+}
+#Name,#Email{
+   margin-right: 320px;
+}
+#contacts-link{
    color: #838383;
    cursor:default;
    transition: 0;
 }
-#about-link:hover{
+#contacts-link:hover{
    box-shadow: 0;
    transform: scale(1);
 }
